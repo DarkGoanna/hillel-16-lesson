@@ -1,0 +1,139 @@
+.third-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+    &__photo-wrapper, &__text-wrapper {
+        width: 50%;
+    }
+    &__photo-wrapper {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: $bg-image;
+    }
+    &__text-wrapper {
+        padding-top: 246px;
+        padding-bottom: 123px;
+        position: relative;
+    }
+    &__number {
+        color: $title;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        background-color: $bright-purple;
+        padding: 62px 70px 60px 70px;
+        position: absolute;
+        top: 210px;
+        left: -85px;
+        display: inline-block;
+        vertical-align: top;
+
+        &::after {
+            content: '';
+            height: 4px;
+            width: 30px;
+            display: block;
+            background-color: $light-purple;
+            border-radius: 5px;
+            margin-top: 6px;
+        }
+    }
+    &__text-inner {
+        margin-left: 125px;
+        width: 700px;
+    }
+    &__title {
+        color: $title2;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 99px;
+    }
+    &__text {
+        color: $black;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+
+        &::after {
+            content: '';
+            width: 25px;
+            height: 0;
+            display: block;
+            border-top: 2px solid $bright-purple;
+            border-bottom: 3px solid $bright-purple;
+            border-radius: 5px;
+            margin-top: 84px;
+        }
+    }
+}
+.row1 {
+    & .third-block__photo-wrapper {
+        background-image: url(../images/man_in_white.jpg);
+    }
+    & .third-block__title {
+        margin-bottom: 99px;
+    }
+    & .third-block__text {
+        width: 375px;
+
+        &::after {
+            margin-top: 84px;
+        }
+    }
+}
+.row2 {
+    & .third-block__photo-wrapper {
+        background-image: url(../images/coach.jpg);
+    }
+    & .third-block__text-wrapper {
+        padding-bottom: 160px;
+    }
+    & .third-block__number {
+        right: -85px;
+        left: auto;
+    }
+    & .third-block__text-inner {
+        margin-right: 110px;
+        margin-left: auto;
+        width: 660px;
+    }
+    & .third-block__title {
+        margin-bottom: 57px;
+    }
+    & .third-block__text {
+        width: 395px;
+
+        &::after {
+            margin-top: 115px;
+        }
+    }
+}
+.row3 {
+    & .third-block__photo-wrapper {
+        background-image: url(../images/team.jpg);
+    }
+    & .third-block__title {
+        margin-bottom: 92px;
+    }
+    & .third-block__text {
+        width: 512px;
+
+        &::after {
+            margin-top: 90px;
+        }
+    }
+}

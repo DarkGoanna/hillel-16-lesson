@@ -1,0 +1,121 @@
+.athlets {
+    padding-top: 103px;
+
+    & > .container {
+        position: relative;
+    }
+    &_margin {
+        margin-left: 952px;
+    }
+    &__title {
+        color: $title3;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+    }
+    &__image {
+        position: absolute;
+        top: -61px;
+        left: 295px;
+        z-index: 2;
+    }
+    &__strip {
+        width: 880px;
+        height: 6px;
+        background-color: $strip;
+        transform: rotate(-49deg);
+
+        &_position {
+            position: absolute;
+            top: 293px;
+            left: 130px;
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 3px;
+            background-color: $strip;
+            transform: rotate(49deg) translate(100px, -565px);
+        }
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 3px;
+            background-color: $strip;
+            transform: rotate(-42deg) translate(552px, 101px);
+        }
+    }
+    &__number {
+        display: inline-block;
+        vertical-align: top;
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        margin-top: 3px;
+        
+        &::after {
+            content: '';
+            height: 0;
+            display: block;
+            border-top: 2px solid $bright-purple;
+            border-bottom: 3px solid $bright-purple;
+            border-radius: 5px;
+            margin-top: 1px;
+        }
+    }
+    &__item {
+        padding-top: 64px;
+        padding-bottom: 61px;
+
+        &:nth-child(1n) {
+            padding-bottom: 57px; 
+        }
+        &:nth-child(2n) {
+            padding-top: 62px;
+            padding-bottom: 59px; 
+            background-color: $grey-block;
+        }
+        &:nth-child(3n) {
+            padding-top: 88px;
+            padding-bottom: 98px; 
+            background-color: $bright-purple;
+
+            & .athlets__number {
+                color: $dark-navy;
+            }
+            & .athlets__number::after {
+                border-color: $white2;
+            }
+            & .athlets__text {
+                color: $white;
+            }
+        }
+    }
+    &__text-wrapper {
+        margin-right: 162px;
+    }
+    &__list-title {
+        color: $title2;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin-bottom: 18px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &__text {
+        color: $black;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+    & .owl-carousel {
+        display: none;
+    }
+}

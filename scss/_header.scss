@@ -1,0 +1,186 @@
+.header {
+    background-image: url(../images/bg_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+
+    &__curtain {
+        background-color: $curtain;
+        padding-top: 54px;
+        padding-bottom: 110px
+    }
+    & .clearfix {
+        &:first-child {
+            margin-bottom: 295px;
+        }
+    }
+    &__logo {
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+        margin-left: 138px;
+    }
+    &__link {
+        color: $white;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 35px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        margin-right: 140px;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+
+        &:hover {
+            transform: scale(1.15);      
+        }
+    }
+    &__title {
+        color: $white;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 4.4px;
+        margin-left: 132px;
+        margin-bottom: 15px;
+        position: relative;
+
+        &_left {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            z-index: 3;
+        }
+        &_right {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 137px;
+            float: right;
+            position: relative;
+            z-index: 1;
+        }
+        &_strip {
+            width: 400px;
+            height: 6px;
+            background-color: $bright-purple;
+            transform: rotate(-52deg);
+            position: absolute;
+            top: 72px;
+            left: 324px;
+            z-index: 2;
+        }
+    }
+    &__nav {
+        margin-bottom: 171px;
+    }
+}
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn {
+    &__button {
+        display: inline-block;
+        vertical-align: top; 
+        box-shadow: 0 16px 24px #0a0e34;
+        background-color: $bright-purple;
+        margin-right: 50px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:hover {
+            transform: scale(0.95);      
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &_text {
+            color: $white;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &_attachment {
+            display: block;
+            font-weight: 600;
+        }
+        &_play-market {
+            padding: 19px 67px 21px 43px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 33px;
+                height: 37px;
+                background-image: url(../images/icon_Apple.png);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                margin-right: 29px;
+            }
+        }
+        &_google-play {
+            padding: 19px 85px 19px 64px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 36px;
+                height: 39px;
+                background-image: url(../images/icon_GooglePlay.png);
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+.logo {
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 138px;
+    }
+    &__item {
+        margin-right: 50px;
+
+        &:hover {
+            transform: scale(1.15);      
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        color: $light-purple;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
